@@ -1,0 +1,140 @@
+/* Citas.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fb;  /* Fondo suave para toda la página */
+  margin: 0;
+  padding: 0;
+}
+
+.citas-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-cita {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4e73df;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #2e59d9;
+}
+
+.citas-lista {
+  margin-top: 30px;
+}
+
+.cita-item {
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cita-item p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-editar,
+.btn-eliminar {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-editar {
+  background-color: #4e73df;
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #2e59d9;
+}
+
+.btn-eliminar {
+  background-color: #e74a3b;
+  color: white;
+}
+
+.btn-eliminar:hover {
+  background-color: #c0392b;
+}
+
+.error-message {
+  color: #e74a3b;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .citas-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-cita {
+    gap: 10px;
+  }
+
+  .form-input, .btn-submit {
+    font-size: 0.9rem;
+  }
+
+  .btn-editar, .btn-eliminar {
+    font-size: 0.8rem;
+  }
+}

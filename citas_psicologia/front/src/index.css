@@ -1,0 +1,55 @@
+/* index.scc */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y fuente general */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Envolver el contenido principal */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Configuración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilos de los inputs y textarea */
+input, textarea {
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+}
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  #root {
+      flex-direction: column;
+      padding: 20px;
+  }
+}
